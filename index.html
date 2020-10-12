@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <link rel="stylesheet" href="css/style.css">
+ <link rel="stylesheet" href="css/bootstrap.min.css">
+ <script src="js/jquery.js"></script>
+ <script src="js/app.js"></script>
+ <title>Ajax Crud</title>
+</head>
+<body>
+ <div class="container form">
+   <div class="col-sm-10 col-md-7 col-lg-5 m-auto">
+    <form action="insert.php" method="post">
+
+      
+     <h3 class="text-center text-info text-bold">Focus Your Insert Action</h3>
+     <div class="message"></div>
+      <hr class="bg-light">
+      <select name="who" id="who" class="form-control">
+        <option>Select</option>
+        <option value="admin">Admin</option> 
+        <option value="teacher">Teacher</option>
+        <option value="student">Student</option>
+      </select>
+      <input type="text" name="id" id="id" placeholder="Enter your Id" class="form-control">
+      <input type="text" name="reg" id="reg" placeholder="Enter your Reg.No" class="form-control">
+      <input type="text" name="email" id="email" placeholder="Enter your Email" class="form-control">
+      <input type="text" name="mobile" id="mobile" placeholder="Enter your Mobile No" class="form-control">
+      <input type="password" name="password" id="password" placeholder="Enter your Password" class="form-control">
+      <input type="password" name="cpassword" id="cpassword" placeholder="Enter your Confirm Password" class="form-control">
+      <button type="submit" class="btn btn-info form-control" id="regbtn">Registration</button>
+    </form>
+   </div>
+ </div>
+ <div class="container table"></div>
+</body>
+</html>
